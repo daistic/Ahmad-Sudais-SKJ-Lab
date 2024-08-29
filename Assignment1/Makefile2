@@ -1,0 +1,13 @@
+all: similiar
+
+add : similiar.cpp
+	g++ -o similiar similiar.cpp
+
+dump: similiar
+	objdump -d similiar.exe > similiar.asm
+
+clean:
+	del similiar.exe > similiar.asm
+
+run: similiar.exe
+	./similiar
